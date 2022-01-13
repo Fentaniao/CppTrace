@@ -1,3 +1,7 @@
+#Custom setting
+.idea
+cmake-build-debug
+
 # Prerequisites
 *.d
 
