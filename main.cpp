@@ -5,7 +5,6 @@
 using namespace std;
 
 int main() {
-    OutRedirect2File();
     cout << "Hello, World!" << endl;
     cout << "This is a program designed to preview the effect of our library" << endl;
 
@@ -49,6 +48,8 @@ int main() {
     traceArr(int_arr, { i, j }, "Description");
 
     cout << ">> Print to the log file: " << endl;
+    OutRedirect2File();
+    cout << "Hello, World!" << endl;
 
 
     return 0;
