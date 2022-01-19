@@ -1,6 +1,11 @@
 # CppTrace
 
-[English Readme](https://github.com/Fentaniao/CppTrace/blob/main/README.md) · [中文文档](https://github.com/Fentaniao/CppTrace/blob/main/README_zh.md)
+<p>
+    <img src="https://img.shields.io/github/v/release/fentaniao/CppTrace?&color=blue&logo=hack-the-box)" />
+    <img alt="C++" src="https://img.shields.io/badge/-C++-9f62a5?style=flat&logo=cplusplus&logoColor=white" />
+</p>
+
+[English Readme](https://github.com/Fentaniao/CppTrace/blob/main/README.md) | [中文自述文件](https://github.com/Fentaniao/CppTrace/blob/main/README_zh.md)
 
 一个用于跟踪 C++ 变量的日志库。
 
@@ -24,7 +29,7 @@
 
 ## 用法
 
-这个库现在有两个主要功能：
+这个库现在有两个主要的接口：
 
 ```
 trace(varName, [a list including cycle variables], [a string of the description])
