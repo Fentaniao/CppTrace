@@ -1,15 +1,16 @@
-#ifndef POWERTRACE_H
-#define POWERTRACE_H
+#ifndef CPPTRACE_H
+#define CPPTRACE_H
 
 /**
- * <h1>PowerTrace</h1>
+ * <h1>CppTrace</h1>
  * <p>A C++ head file designs to trace variable
  * <hr />
  * <h2>Usage</h2>
  * <p>Copy this .h file to your project directory, and include <b><code>#include "PowerTrace.h"</code></b> in your target .cpp file.
  * <h2>Copyright</h2>
  * @author      Fentaniao
- * @version       2021/10/21
+ * @repository      https://github.com/Fentaniao/CppTrace
+ * @License      GPL-3.0 License
  */
 
 // TODO 可以考虑使用修饰符进行控制，如"N2D描述S"表示输出traceNum为2，description为描述，S表示储存为日志
@@ -24,7 +25,7 @@ using namespace std;
 
 /**
  * <h2>Customize</h2>
- * <p>trace customize variable
+ * <p>trace with customize setting
  */
 
 // TODO 完善自定义内容
@@ -36,8 +37,11 @@ using namespace std;
 
 /**
  * <h2>trace</h2>
- * <p>trace simple variable
+ * <p>Function: trace the simple variable among the file.
+ * <p>Input: varName, [a list including cycle variables], [a string of the description].
+ * <p>Output: Print the variable information to command window, including variable name, variable type, value, function container, the line of the trace code, cycle number, and the description.
  */
+
 
 //重载
 #define TRACE_1(v) Trace(v, #v, __LINE__, __FUNCTION__)
@@ -94,8 +98,10 @@ Trace(const T var, const string &varName, const int lineNum, const string &funct
 
 /**
  * <h2>traceArr</h2>
- * <p>trace array variable
- */
+ * <p>Function: trace array variable among the file.
+* <p>Input: varName, [a list including cycle variables], [a string of the description].
+* <p>Output: Print the variable information to command window, including variable name, variable type, value, function container, the line of the trace code, cycle number, and the description.
+*/
 
 //重载
 #define TRACEARR_1(v) TraceArr(v, #v, extent<decltype(v)>::value, __LINE__, __FUNCTION__)
@@ -193,4 +199,4 @@ void OutRedirect2File(const string &name = "Time") {
 }
 
 
-#endif //POWERTRACE_H
+#endif //CPPTRACE_H
