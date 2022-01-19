@@ -6,19 +6,21 @@ A logging library to trace C++ variables
 
 ## Features
 
-Trace simple variable among the file
+### 1
 
-Trace array variable among the file
+- Trace simple variable among the file
 
-Print the variable information to command window, including variable name, variable type, value, function container, the line of the trace code, cycle number, and the description.
+- Trace array variable among the file
 
-Trace in the cycle
+- Print the variable information to command window, including variable name, variable type, value, function container, the line of the trace code, cycle number, and the description.
 
-Add description with variable
+- Trace in the cycle
 
-### Screenshoot
+- Add description with variable
 
-![screenshoot](README.assets/screenshoot.png)
+### Screenshot
+
+![screenshoot](README.assets/screenshot.png)
 
 ## Install
 
